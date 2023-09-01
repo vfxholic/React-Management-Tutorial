@@ -24,30 +24,38 @@ const styles = theme => ({
 const customers = [
   {
   'id': 1,
-  'image': 'https://picsum.photos/id/254/100/100',
+  'image': 'https://picsum.photos/id/294/100/100',
   'name': '유승걸',
   'birthday': '930316',
-  'gender': 'female',
-  'job': 'engineer'
+  'gender': '남자',
+  'job': '엔지니어',
+  'harbby': '영화보기',
+  'phonenumber': '010-4600-3438',
+  'hight': '184cm'
   },
   {
     'id': 2,
-    'image': 'https://picsum.photos/id/253/100/100',
+    'image': 'https://picsum.photos/id/177/100/100',
     'name': '전소현',
-    'birthday': '930316',
-    'gender': 'female',
-    'job': 'engineer'
+    'birthday': '931217',
+    'gender': 'male',
+    'job': '간호사',
+    'harbby': '요리',
+    'phonenumber': '010-8633-3069',
+    'hight': '162cm'
   },
   {
     'id': 3,
-    'image': 'https://picsum.photos/id/252/100/100',
+    'image': 'https://picsum.photos/id/166/100/100',
     'name': '유지후',
-    'birthday': '930316',
-    'gender': 'female',
-    'job': 'engineer'
+    'birthday': '230612',
+    'gender': '남자',
+    'job': '무직',
+    'harbby': '책읽기',
+    'phonenumber': '123-4567-8900',
+    'hight': '50cm'
   }
 ]
-
 
 
 
@@ -65,6 +73,9 @@ class App extends Component {
               <TableCell>생년월일</TableCell>
               <TableCell>성별</TableCell>
               <TableCell>직업</TableCell>
+              <TableCell>취미</TableCell>
+              <TableCell>H/P</TableCell>
+              <TableCell>신장(cm)</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -79,6 +90,9 @@ class App extends Component {
                     birthday={c.birthday}
                     gender={c.gender}
                     job={c.job}
+                    harbby={c.harbby}
+                    phonenumber={c.phonenumber}
+                    hight={c.hight}
                   />
                 )
               })
@@ -89,7 +103,6 @@ class App extends Component {
     )
   }
 }
-
 
 
 

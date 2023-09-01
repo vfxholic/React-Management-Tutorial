@@ -12,6 +12,9 @@ class Customer extends React.Component {
                 <TableCell>{this.props.birthday}</TableCell>
                 <TableCell>{this.props.gender}</TableCell>
                 <TableCell>{this.props.job}</TableCell>
+                <TableCell>{this.props.harbby}</TableCell>
+                <TableCell>{this.props.phonenumber}</TableCell>
+                <TableCell>{this.props.hight}</TableCell>
             </TableRow>
         )
     }
